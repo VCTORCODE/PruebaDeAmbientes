@@ -10,155 +10,179 @@
 
 <body>
  <header class="header">
-  <h1>Haz tu reservación aqui</h1>
- </header>
- <main class="main-container">
-  <form id="reserva-form">
-   <section class="reservation-details">
-    <h2>Detalles de la Reserva</h2>
-    <label for="reservation-date">Fecha de la Reserva:</label>
-    <input type="date" id="reservation-date" name="reservation-date" required>
 
-    <label for="card-number">Número de Tarjeta:</label>
-    <input type="text" id="card-number" name="card-number" required pattern="\d{16}" placeholder="1234 5678 9101 1121">
+   <nav class="navbar">
+    <div class="menu-icon">
+     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="currentColor" />
+     </svg>
+    </div>
+    <div class="logo">
+     <img src="logo.png" alt="Logo">
+    </div>
+    <div class="flags">
+     <img src="flag_es.svg" alt="ES">
+     <img src="flag_en.svg" alt="EN">
+    </div>
+    
+    <ul class="nav-links">
+     <li><a href="#login">Iniciar sesión</a></li>
+     <li><a href="#register">Registrate</a></li>
+    </ul>
 
-    <label for="num-persons">Número de Personas:</label>
-    <input type="number" id="num-persons" name="num-persons" min="1" max="20" required>
-
-    <label for="num-hours">Número de Horas de Estadía:</label>
-    <input type="number" id="num-hours" name="num-hours" min="1" max="12" required>
-
-   </section>
-   <div class="decoration">
-    <div>Entrada</div>
-    <div>Recibidor-Caja</div>
-    <div>Sanitarios</div>
-
+   </nav>
+  </header>
+  <main class="main-container">
+   <div class="vista-reservation">
+    <h1>Haz tu reservación aqui</h1>
    </div>
-   <section class="grid-container">
-    <label class="table" for="mesa-1">
-     Mesa 1
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">
-     Mesa 2
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">
-     Mesa 3
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">Mesa 4
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">Mesa 5
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">Mesa 6
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">Mesa 7
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">Mesa 8
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">Mesa 9
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">Mesa 10
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">Mesa 11
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-    <label class="table">Mesa 12
-     <div class="sillas">
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-      <div class="silla"></div>
-     </div>
-     <input type="checkbox" id="mesa-1" class="checkbox" />
-    </label>
-   </section>
-   <section class="decoration">
-    <div>Cocina</div>
-    <div>Bar</div>
-    <div>Area de juegos</div>
+   <form id="reserva-form">
+    <section class="reservation-details">
+     <h2>Detalles de la Reserva</h2>
+     <label for="reservation-date">Fecha de la Reserva:</label>
+     <input type="date" id="reservation-date" name="reservation-date" required>
 
-   </section>
-   <button type="submit">Reservar</button>
-  </form>
+     <label for="card-number">Número de Tarjeta:</label>
+     <input type="text" id="card-number" name="card-number" required pattern="\d{16}" placeholder="1234 5678 9101 1121">
+
+     <label for="num-persons">Número de Personas:</label>
+     <input type="number" id="num-persons" name="num-persons" min="1" max="20" required>
+
+     <label for="num-hours">Número de Horas de Estadía:</label>
+     <input type="number" id="num-hours" name="num-hours" min="1" max="12" required>
 
 
- </main>
+    </section>
+    <div class="decoration">
+     <div>Entrada</div>
+     <div>Recibidor-Caja</div>
+     <div>Sanitarios</div>
+
+    </div>
+    <section class="grid-container">
+     <label class="table" for="mesa-1">
+      Mesa 1
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">
+      Mesa 2
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">
+      Mesa 3
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">Mesa 4
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">Mesa 5
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">Mesa 6
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">Mesa 7
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">Mesa 8
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">Mesa 9
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">Mesa 10
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">Mesa 11
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+     <label class="table">Mesa 12
+      <div class="sillas">
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+       <div class="silla"></div>
+      </div>
+      <input type="checkbox" id="mesa-1" class="checkbox" />
+     </label>
+    </section>
+    <section class="decoration">
+     <div>Cocina</div>
+     <div>Bar</div>
+     <div>Area de juegos</div>
+
+    </section>
+    <button type="submit"><strong>Reservar</strong></button>
+   </form>
+
+
+  </main>
 </body>
 
 </html>
